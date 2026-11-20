@@ -1,0 +1,32 @@
+[project]
+name = "expressive-ai"
+version = "0.1.0"
+description = "An e2e Vision + motor + language + speech pipeline for the reachy mini"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Kevin Rohan Vaz", email = "excalibur.krv@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "av>=19.0.2",
+    "kokoro>=0.9.4",
+    "mlx-qwen3-asr>=0.4.0",
+    "numpy>=2.5.5",
+    "ollama>=0.6.2",
+    "opencv-python>=5.1.0.95",
+    "pygame>=2.6.1",
+    "reachy-mini[mujoco]>=1.14.0",
+    "rerun-sdk>=0.43.2",
+    "scipy>=1.18.1",
+    "torchaudio>=2.11.0",
+]
+
+[project.scripts]
+expressive-ai = "expressive_ai:main"
+reachy-motors = "expressive_ai.rerun.rerun_motor_logs_live:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
