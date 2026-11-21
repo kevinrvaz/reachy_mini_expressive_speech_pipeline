@@ -8,7 +8,7 @@ from pathlib import Path
 
 import rerun as rr
 
-from .reachy_view import DEFAULT_ASSETS, ReachyMiniView
+from expressive_ai.rerun.reachy_view import DEFAULT_ASSETS, ReachyMiniView
 
 
 def main():
