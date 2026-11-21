@@ -6,6 +6,7 @@ their [upstream license and attribution](src/expressive_ai/assets/reachy_mini/NO
 Prequisites:-
 - Minimum Python 3.12
 - Ollama with gemma e4b downloaded
+- FFmpeg installed
 - uv downloaded and installed - https://docs.astral.sh/uv/
 - This project will also download other Deep learning models like kokoro 82M, silero-vad
 - Project is dependent on MPS, will be updated later to work with CUDA, etc.
